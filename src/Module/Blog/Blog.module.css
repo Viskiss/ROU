@@ -1,0 +1,103 @@
+.btn button {
+  margin-top: 100px;
+  text-align: center;
+  text-decoration: 2px underline #bf49e1;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.header h2 {
+  font-size: 60px;
+  margin-bottom: 90px;
+}
+
+.header p {
+  font-size: 24px;
+  letter-spacing: 0.4em;
+  margin: 0;
+  color: #c04ae2;
+}
+
+.header {
+  display: flex;
+  width: 100% inherit;
+  height: 120px;
+  margin-bottom: 120px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.user img {
+  object-fit: cover;
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.blog {
+  margin-top: 300px;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+.item {
+  height: 400px;
+  width: 370px;
+  border: 1px solid #eeeded;
+  border-radius: 10px;
+}
+
+.item:hover {
+  box-shadow: 0px 0px 8px 4px rgb(2 2 16 / 15%);
+}
+
+.item h3 {
+  font-size: 24px;
+}
+
+.item1 p:first-child {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fe6686;
+}
+
+.item2 p:first-child {
+  font-weight: 700;
+
+  font-size: 18px;
+  color: #54d6a1;
+}
+
+.item3 p:first-child {
+  font-weight: 700;
+
+  font-size: 18px;
+  color: #fe9a3f;
+}
+
+.item p:nth-child(5n-2) {
+  font-size: 20px;
+  color: #5e5858;
+}
+
+.text {
+  margin: 55px 40px 50px 40px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin: 0 40px 50px 40px;
+}
+
+.user h3 {
+  font-size: 21px;
+  margin: 0 70px 0 0;
+}

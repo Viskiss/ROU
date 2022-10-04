@@ -1,0 +1,7 @@
+.heroArea {
+  background-color: rgb(235, 234, 250);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: 985px;
+  z-index: 468;
+}

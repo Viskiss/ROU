@@ -1,0 +1,52 @@
+.header h2 {
+  font-size: 60px;
+  margin-bottom: 90px;
+}
+
+.head p:nth-child(1) {
+  font-size: 24px;
+  letter-spacing: 0.4em;
+  margin: 0;
+  color: #c04ae2;
+}
+
+.text p:nth-child(1) {
+  color: #5e5858;
+  font-size: 24px;
+  margin: 0 0 66px 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 580px;
+}
+
+.image img {
+  position: absolute;
+  height: 600px;
+  margin-left: 140px;
+  border-radius: 10px;
+  top: -200px;
+  border-radius: 10px 10px 10px 10px;
+  clip-path: polygon(
+    21.3% 11.5%,
+    100% 0.8%,
+    99.7% 0%,
+    100% 100%,
+    100% 100%,
+    0% 100%,
+    0% 100%,
+    0% 15%
+  );
+}
+
+.image {
+  position: relative;
+}
+
+.testimonial {
+  margin-top: 400px;
+  display: flex;
+}
