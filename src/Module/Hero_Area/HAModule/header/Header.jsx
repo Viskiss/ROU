@@ -1,34 +1,27 @@
-import logo from "../../Img/RouHeaderLogo.png";
-import facebook from "../../Img/facebook.png";
-import youtube from "../../Img/youtube.png";
-import instagram from "../../Img/instagram.png";
-import twitter from "../../Img/twitter.png";
-import style from "./Header.module.css";
+import { NavItem, SocialLink } from "./components";
+import { BTN_TITLE, SOCIAL_LINK } from "./Header.constants";
+
+import styles from "./Header.module.css";
 
 function Header() {
   return (
     <div>
-      <nav className={style.nav}>
-        <img className={style.logo} src={logo} alt="Logo" />
-        <button className={style.button}>Home</button>
-        <button className={style.button}>About</button>
-        <button className={style.button}>Service</button>
-        <button className={style.button}>Works</button>
-        <button className={style.button}>News</button>
-        <button className={style.button}>Contact</button>
-        <button className={style.buttonBig}>Get A Quote</button>
-        <button className={style.buttonLogo}>
-          <img src={facebook} alt="facebook" />
-        </button>
-        <button className={style.buttonLogo}>
-          <img src={twitter} alt="twitter" />
-        </button>
-        <button className={style.buttonLogo}>
-          <img src={youtube} alt="youtube" />
-        </button>
-        <button className={style.buttonLogo}>
-          <img src={instagram} alt="instagram" />
-        </button>
+      <nav className={styles.nav}>
+        <img
+          className={styles.logo}
+          src="/Images/ImgHeader/RouHeaderLogo.png"
+          alt="Logo"
+        />
+
+        {BTN_TITLE.map((a) => (
+          <NavItem key={a.title} title={a.title} />
+        ))}
+
+        <button className={styles.buttonBig}>Get A Quote</button>
+
+        {SOCIAL_LINK.map((sl) => (
+          <SocialLink key={sl.src} src={sl.src} href={sl.href} />
+        ))}
       </nav>
     </div>
   );

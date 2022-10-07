@@ -1,63 +1,29 @@
-import style from "./Portfolio.module.css";
-import imageOne from "./Img/01.png";
-import imageTwo from "./Img/02.png";
-import imageThree from "./Img/03.png";
+import { ITEM } from "./portfolio.constance"
+import PortfolioItem from "./components/PortfolioItem";
+
+import styles from "./Portfolio.module.css";
+
 
 function Portfolio() {
   return (
-    <div className={style.portfolio}>
-      <div className={style.header}>
+    <div className={styles.portfolio}>
+      <div className={styles.header}>
         <p>Our Projects</p>
         <h2>Check the real innovation of problem solving</h2>
       </div>
-      <div className={style.items}>
-        <div className={`${style.item} ${style.item1}`}>
-          <div>
-            <img src={imageOne} alt="" />
-          </div>
-          <div className={style.textContent}>
-            <p>Development</p>
-            <h3>Jodi kokhono vul hoye jay tumi oporadh nio na</h3>
-            <p>
-              Excepteur sint occae cat cupidatat non proident, sunt in culpa qui
-              officia deser unt mollit a do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua.{" "}
-            </p>
-            <button>View Project</button>
-          </div>
-        </div>
-        <div className={`${style.item} ${style.item2}`}>
-          <div>
-            <img src={imageTwo} alt="" />
-          </div>
-          <div className={style.textContent}>
-            <p>Research & Analytics</p>
-            <h3>Ei biristi veja rate tuminei bole somoy amar katena</h3>
-            <p>
-              Excepteur sint occae cat cupidatat non proident, sunt in culpa qui
-              officia deser unt mollit a do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua.{" "}
-            </p>
-            <button>View Project</button>
-          </div>
-        </div>
-        <div className={`${style.item} ${style.item3}`}>
-          <div>
-            <img src={imageThree} alt="" />
-          </div>
-          <div className={style.textContent}>
-            <p>UI/UX Engineering</p>
-            <h3>Ami jare chaire se thake mori ontore </h3>
-            <p>
-              Excepteur sint occae cat cupidatat non proident, sunt in culpa qui
-              officia deser unt mollit a do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua.{" "}
-            </p>
-            <button>View Project</button>
-          </div>
-        </div>
+      <div className={styles.items}>
+        {ITEM.map((a) => (
+          <PortfolioItem
+          key={a.title}
+          title={a.title}
+          title2={a.title2}
+          text={a.text}
+          img={a.img}
+          style={a.style}
+           />
+        ))}
       </div>
-      <div className={style.btn}>
+      <div className={styles.btn}>
         <button>Go to Portfolio</button>
       </div>
     </div>

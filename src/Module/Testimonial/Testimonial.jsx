@@ -1,16 +1,15 @@
-import style from "./Testimonial.module.css";
-import image from "./Img/01.jpg";
+import styles from "./Testimonial.module.css";
 
 function Testimonial() {
   return (
-    <div className={style.testimonial}>
-      <div className={style.header}>
-        <div className={style.head}>
+    <div className={styles.testimonial}>
+      <div className={styles.header}>
+        <div className={styles.head}>
           <p>Testimonial</p>
           <h2>They are awesome!</h2>
         </div>
 
-        <div className={style.text}>
+        <div className={styles.text}>
           <p>
             Kollit a do eiusmod tempor incididunt ut labore et do irure dolor in
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -22,9 +21,9 @@ function Testimonial() {
           </p>
         </div>
       </div>
-      <div className={style.image}>
+      <div className={styles.image}>
         {" "}
-        <img src={image} alt="" />
+        <img src="/Images/Testimonial/01.jpg" alt="" />
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 .btn button {
+  border: none;
+  padding: 5px;
+  cursor: pointer;
   margin-top: 100px;
   text-align: center;
-  text-decoration: 2px underline #bf49e1;
-  border: none;
   background-color: inherit;
-  cursor: pointer;
-  padding: 5px;
+  text-decoration: 2px underline #bf49e1;
 }
 
 .header h2 {
@@ -22,44 +22,21 @@
 
 .header {
   display: flex;
-  width: 100% inherit;
   height: 120px;
-  margin-bottom: 120px;
   flex-direction: row;
+  width: 100% inherit;
+  margin-bottom: 120px;
   justify-content: space-between;
 }
 
-.user img {
-  object-fit: cover;
-  height: 45px;
-  width: 45px;
-  border-radius: 100%;
-  margin-right: 20px;
-}
-
 .blog {
-  margin-top: 300px;
+  margin-top: 200px;
 }
 
 .items {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 200px;
-}
-
-.item {
-  height: 400px;
-  width: 370px;
-  border: 1px solid #eeeded;
-  border-radius: 10px;
-}
-
-.item:hover {
-  box-shadow: 0px 0px 8px 4px rgb(2 2 16 / 15%);
-}
-
-.item h3 {
-  font-size: 24px;
+  justify-content: space-between;
 }
 
 .item1 p:first-child {
@@ -80,24 +57,4 @@
 
   font-size: 18px;
   color: #fe9a3f;
-}
-
-.item p:nth-child(5n-2) {
-  font-size: 20px;
-  color: #5e5858;
-}
-
-.text {
-  margin: 55px 40px 50px 40px;
-}
-
-.user {
-  display: flex;
-  align-items: center;
-  margin: 0 40px 50px 40px;
-}
-
-.user h3 {
-  font-size: 21px;
-  margin: 0 70px 0 0;
 }

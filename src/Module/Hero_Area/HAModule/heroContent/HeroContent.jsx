@@ -1,5 +1,4 @@
 import style from "./HeroContent.module.css";
-import image from "../../Img/HeroImage.png";
 
 function HeroContent() {
   return (
@@ -13,7 +12,7 @@ function HeroContent() {
         <button className={style.button}>Get Started</button>
       </div>
       <div className={style.imageContent}>
-        <img src={image} alt="heroImage" />
+        <img src="/Images/ImgHeader/HeroImage.png" alt="heroImage" />
       </div>
     </div>
   );

@@ -1,61 +1,53 @@
-import style from "./Footer.module.css";
-import imageOne from "./Img/01.png";
-import imageTwo from "./Img/02.png";
-import imageThree from "./Img/03.png";
-import imageBtn from "./Img/04.png";
-import logo from "../Hero_Area/Img/RouHeaderLogo.png";
+import AboutItem from "./components/AboutItem";
+import ServiceItem from "./components/ServiceItem";
+import ContactItem from "./components/ContactItem";
+import { ABOUT_ITEM, SERVICE_ITEM, CONTACT_ITEM } from "./footer.constants";
+
+import styles from "./Footer.module.css";
 
 function Footer() {
   return (
-    <div className={style.container}>
-      <div className={style.footer}>
-        <div className={style.input}>
-          <img src={logo} alt="" />
+    <div className={styles.container}>
+      <footer className={styles.footer}>
+        <div className={styles.input}>
+          <img src="/Images/ImgHeader/RouHeaderLogo.png" alt="" />
           <p>
             Fectetur adipisicing elit, sed do eius mod tempor Lorem ipsum dolor
             sit amet, con sectetur adipisicing elitt ut labore
           </p>
-          <form className={style.form}>
+          <form className={styles.form}>
             <input type="text" placeholder="Submit email" />
             <button>
-              <img src={imageBtn} alt="" />
+              <img src="/Images/Footer/04.png" alt="" />
             </button>
           </form>
         </div>
-        <div className={style.item}>
+        <div className={styles.item}>
           <h3>About</h3>
-          <a href="">About Us</a>
-          <a href="">Service</a>
-          <a href="">Our Storiy</a>
-          <a href="">Success</a>
-          <a href="">Support</a>
+          {ABOUT_ITEM.map((a) => (
+            <AboutItem key={a.title} title={a.title} href={a.href} />
+          ))}
         </div>
 
-        <div className={style.item}>
-          <h3>Service</h3>
-          <a href="">Development</a>
-          <a href="">Maintanance</a>
-          <a href="">Consyltancy</a>
-          <a href="">Desing</a>
+        <div className={styles.item}>
+          <h3>Services</h3>
+          {SERVICE_ITEM.map((b) => (
+            <ServiceItem key={b.title} title={b.title} />
+          ))}
         </div>
 
-        <div className={style.item}>
+        <div className={styles.item}>
           <h3>Get in Touch</h3>
-          <div>
-            <img src={imageOne} alt="" />
-            <a href=""> 22/1 Bardeshi, Amin Bazar Dhaka 1348</a>
-          </div>
-          <div>
-            <img src={imageTwo} alt="" />
-            <a href=""> xuwelkhan@gmail.com</a>
-          </div>
-
-          <div>
-            <img src={imageThree} alt="" />
-            <a href=""> +88 01679 252595</a>
-          </div>
+          {CONTACT_ITEM.map((c) => (
+            <ContactItem
+              key={c.title}
+              title={c.title}
+              href={c.href}
+              img={c.img}
+            />
+          ))}
         </div>
-      </div>
+      </footer>
     </div>
   );
 }

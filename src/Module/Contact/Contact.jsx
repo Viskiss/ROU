@@ -1,60 +1,51 @@
-import style from "./Contact.module.css";
-import image1 from "./Img/01.png";
-import image2 from "./Img/02.png";
-import image3 from "./Img/03.png";
+import ContactItem from "./components/ContactItem";
+import InputItem from "./components/InputItem";
+import { INPUT_ITEM, CONTACT_ITEM } from "./contact.constants";
+
+import styles from "./Contact.module.css";
 
 function Contact() {
   return (
-    <div className={style.contact}>
-      <div className={style.header}>
+    <div className={styles.contact}>
+      <div className={styles.header}>
         <p>Contact Us</p>
         <h2>Stay connected with us for any reason</h2>
       </div>
-      <div className={style.items}>
-        <div className={`${style.item} ${style.item1}`}>
+      <div className={styles.items}>
+        <div className={`${styles.item} ${styles.item1}`}>
           <h3>Write us a message</h3>
-          <div className={style.form}>
+          <div className={styles.form}>
             <form>
-              <input placeholder="Your name" />
-              <br />
-              <input placeholder="Your email" />
-              <br />
-              <input placeholder="Subject" />
-              <br />
-              <input placeholder="Start writing message here" />
+              {INPUT_ITEM.map((a) => (
+                <InputItem
+                  key={a.placeholder}
+                  placeholder={a.placeholder}
+                  type={a.type}
+                />
+              ))}
+              <textarea placeholder="Start writing message here" />
               <br />
               <button>Get Started</button>
             </form>
           </div>
         </div>
-        <div className={`${style.item} ${style.item2}`}>
+        <div className={`${styles.item} ${styles.item2}`}>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor inci didunt ut labore et dolore magna aliqua.
           </p>
 
-          <div className={style.information}>
-            <div className={style.info}>
-              <img src={image1} alt="" />
-              <div>
-                <h3>Phone</h3>
-                <p>0123-4567-8910</p>
-              </div>
-            </div>
-            <div className={style.info}>
-              <img src={image2} alt="" />
-              <div>
-                <h3>Email</h3>
-                <p>hello@rainydesign.com</p>
-              </div>
-            </div>
-            <div className={style.info}>
-              <img src={image3} alt="" />
-              <div>
-                <h3>Addres</h3>
-                <p>20, Bordeshi, Amin Bazar Savar, Dhaka</p>
-              </div>
-            </div>
+          <div className={styles.information}>
+            <address>
+              {CONTACT_ITEM.map((b) => (
+                <ContactItem
+                  key={b.title}
+                  title={b.title}
+                  info={b.info}
+                  img={b.img}
+                />
+              ))}
+            </address>
           </div>
         </div>
       </div>

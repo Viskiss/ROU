@@ -1,10 +1,11 @@
 import Header from "./HAModule/header/Header";
 import HeroContent from "./HAModule/heroContent/HeroContent";
-import style from "./HeroArea.module.css";
+
+import styles from "./HeroArea.module.css";
 
 function HeroArea() {
   return (
-    <div className={style.heroArea}>
+    <div className={styles.heroArea}>
       <Header />
       <HeroContent />
     </div>

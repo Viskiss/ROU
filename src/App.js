@@ -9,12 +9,13 @@ import Portfolio from "./Module/Portfolio/Portfolio";
 import Service from "./Module/Serv/Service";
 import Team from "./Module/Team/Team";
 import Testimonial from "./Module/Testimonial/Testimonial";
+import MainLayout from "./Module/MainLayout/MainLayout";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-        <HeroArea />
+        <MainLayout>
         <Intro />
         <About />
         <Service />
@@ -23,7 +24,7 @@ function App() {
         <Testimonial />
         <Contact />
         <Blog />
-        <Footer />
+        </MainLayout>
       </div>
     </div>
   );

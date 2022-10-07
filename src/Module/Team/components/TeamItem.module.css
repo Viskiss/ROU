@@ -1,0 +1,15 @@
+.item img {
+  height: 310px;
+}
+
+.item {
+  margin-left: 20px;
+}
+
+.item h3 {
+  margin-top: 0;
+}
+
+.item div:nth-child(2) {
+  margin-top: 30px;
+}

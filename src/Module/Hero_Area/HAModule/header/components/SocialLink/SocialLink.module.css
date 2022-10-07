@@ -1,0 +1,10 @@
+.aLogo {
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.aLogo img {
+  height: 20px;
+  padding-right: 5px;
+}

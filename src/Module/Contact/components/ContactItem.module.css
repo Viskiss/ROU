@@ -1,0 +1,22 @@
+.info {
+  height: 60px;
+  width: 270px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.info p {
+  color: #5e5858;
+  font-size: 18px;
+}
+
+.info h3 {
+  font-size: 21px;
+  margin-bottom: 0;
+}
+
+.info img {
+  margin-right: 20px;
+  height: 55px;
+}

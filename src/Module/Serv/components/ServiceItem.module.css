@@ -1,0 +1,39 @@
+.item {
+  width: 370px;
+  display: flex;
+  height: 470px;
+  align-items: center;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.5s;
+  backdrop-filter:blur(2px);
+  box-shadow: 0px 0px 8px 4px rgb(2 2 16 / 5%);
+}
+
+.item:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 8px 4px rgb(2 2 16 / 15%);
+}
+
+.item img:first-child {
+  height: 70px;
+  margin-top: 70px;
+  justify-content: center;
+}
+
+.item img:last-child {
+  width: 45px;
+  margin-top: 50px;
+  transform: rotate(-90deg);
+}
+
+.item p {
+  margin: 0;
+  font-size: 20px;
+  padding: 0 40px 0 40px;
+}
+
+.item h3 {
+  font-size: 30px;
+}

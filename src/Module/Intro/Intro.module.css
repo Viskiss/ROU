@@ -1,9 +1,9 @@
 .intro {
-  margin-top: 180px;
   display: flex;
+  margin-top: 180px;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
 }
 
 .header h2 {
@@ -12,9 +12,9 @@
 }
 
 .header p {
+  color: #c04ae2;
   font-size: 24px;
   letter-spacing: 0.4em;
-  color: #c04ae2;
 }
 
 .items {
@@ -28,40 +28,40 @@
 }
 
 .item:hover {
-  box-shadow: 0px 0px 8px 4px rgb(2 2 16 / 15%);
   transition: transform 0.3s, box-shadow 0.5s;
+  box-shadow: 0px 0px 8px 4px rgb(2 2 16 / 15%);
 }
 
 .item h3 {
-  padding: 0 70px 0 70px;
   margin: 0;
   font-size: 30px;
+  padding: 0 70px 0 70px;
 }
 
 .item p {
+  margin: 0;
+  padding: 50px;
   font-size: 20px;
   color: #878283;
-  padding: 50px;
-  margin: 0;
 }
 
 .item img {
+  height: 85px;
   padding-top: 90px;
   padding-bottom: 45px;
-  height: 85px;
 }
 
 .item1 {
-  border: 6px solid #fcd7df;
   border-radius: 15px;
+  border: 6px solid #fcd7df;
 }
 
 .item2 {
-  border: 6px solid #c9f3e2;
   border-radius: 15px;
+  border: 6px solid #c9f3e2;
 }
 
 .item3 {
-  border: 6px solid #f2d5ba;
   border-radius: 15px;
+  border: 6px solid #f2d5ba;
 }
